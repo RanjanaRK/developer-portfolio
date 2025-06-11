@@ -4,6 +4,7 @@ import { motion } from "motion/react";
 import Link from "next/link";
 import RippleBg from "./RippleBg";
 import { Button } from "../ui/button";
+import { Download } from "lucide-react";
 
 const Hero = () => {
   const fadeSlideIn = {
@@ -67,9 +68,14 @@ const Hero = () => {
                 Explore My Work
               </Button>
             </Link>
-            <Link href="https://github.com/bekacru/better-fetch">
+            <Link href="https://github.com/bekacru/better-fetch"></Link>
+            <Link
+              href="/resume.pdf"
+              download="ranjanaK.pdf"
+              className="flex items-center gap-1"
+            >
               <Button className="gap flex" variant="secondary" size={"sm"}>
-                Contact Me
+                Resume <Download />
               </Button>
             </Link>
           </motion.div>
