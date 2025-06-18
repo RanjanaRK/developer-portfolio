@@ -1,18 +1,11 @@
 import type { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
-import { Geist, Iceland, JetBrains_Mono } from "next/font/google";
+import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
-const geist = Geist({
-  subsets: ["latin"],
-  weight: ["400", "700"], // Adjust weight array as needed.
-});
 const jetBrains = JetBrains_Mono({
   subsets: ["latin"],
   weight: ["400", "700"], // Adjust weight array as needed.
-});
-const poetsen = Iceland({
-  weight: ["400"], // Adjust weight array as needed.
 });
 
 type RootLayoutProps = Readonly<{
@@ -33,15 +26,7 @@ const RootLayout = ({ children }: RootLayoutProps) => {
           enableSystem={false}
           defaultTheme="dark"
         >
-          {/* <Nav /> */}
-          <main
-            // className="bg-[linear-gradient(65deg,#ffffff_0%,#ede7f6_40%,#bbdefb_100%)] px-6 dark:bg-[linear-gradient(45deg,#020618_0%,#020618_50%,#0D2D2A_70%,#A84885_100%)]"
-
-            // className="bg-gradient-to-tr from-white via-[#f0f4f8] to-[#9ec9f2] px-6 dark:bg-gradient-to-tr dark:from-[#0b0f13] dark:via-[#212e3e] dark:to-[#07345f]">
-            className=""
-          >
-            {children}
-          </main>
+          <main className="">{children}</main>
         </ThemeProvider>
       </body>
     </html>

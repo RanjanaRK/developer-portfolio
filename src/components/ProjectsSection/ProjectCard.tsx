@@ -1,23 +1,16 @@
 "use client";
 
-import {
-  ArrowRightIcon,
-  ArrowRightLeftIcon,
-  GitBranch,
-  Github,
-} from "lucide-react";
+import { projectsData } from "@/lib/data/projectData";
+import { ArrowRightIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Card } from "../ui/card";
-import { ScrollArea, ScrollBar } from "../ui/scroll-area";
-import { projectsData } from "@/lib/data/projectData";
+import { ScrollArea } from "../ui/scroll-area";
 
 const ProjectCard = () => {
   return (
     <>
       <div className="relative h-screen md:h-[680px]">
-        {/* <Tabs tabs={tabs} /> */}
-
         <ScrollArea className="h-full w-full overflow-hidden rounded-2xl border bg-gray-200/20 dark:bg-gray-900/20">
           {projectsData.map((project) => {
             return (
@@ -29,7 +22,6 @@ const ProjectCard = () => {
                 }}
               >
                 <div className="absolute inset-0 -z-10 rounded-xl bg-[url('/grain.jpg')] opacity-5"></div>
-                {/* <div className="absolute inset-0 z-0 rounded-xl bg-[url(/grain.jpg)] bg-cover bg-center opacity-5"></div> */}
 
                 <div className="">
                   <div className="relative">
@@ -51,16 +43,6 @@ const ProjectCard = () => {
                       ))}
                     </ul>
                     <div className="my-8 flex flex-row items-center justify-start gap-4">
-                      {/* <Link
-                        href={"/"}
-                        className="w-2/3 md:w-2/5"
-                        target="_blank">
-                        <button className="inline-flex h-12 w-full cursor-pointer items-center justify-center gap-2 rounded-xl bg-white font-semibold text-gray-950 transition-all duration-300 hover:bg-white/80">
-                          <span>Souce Code</span>
-                          <ArrowRightIcon className="size-4" />
-                        </button>
-                      </Link> */}
-
                       <Link
                         href="/"
                         target="_blank"
@@ -69,14 +51,6 @@ const ProjectCard = () => {
                         <span>Source Code</span>
                         <ArrowRightIcon className="h-4 w-4" />
                       </Link>
-
-                      {/* <Link
-                        href={"/"}
-                        target="_blank">
-                        <button className="text-foreground bg-background cursor-pointer rounded-full p-2">
-                          <Github className="size-8" />
-                        </button>
-                      </Link> */}
                     </div>
                   </div>
                   <div className="">
@@ -85,21 +59,10 @@ const ProjectCard = () => {
                       alt={project.name}
                       height={250}
                       width={250}
-                      // className="mt-8 -mb-4 rounded-t-lg sm:-mb-0 md:rounded-tl-lg"
                       className="w-full overflow-hidden rounded-t-lg sm:-mb-0 sm:rounded-tl-lg"
                     />
                   </div>
-                  {/* <div className="pointer-events-none absolute top-0 right-0 left-0 h-1 bg-gray-800" /> */}
                 </div>
-                {/* <div className="absolute top-10 right-10">
-                  <Link
-                    href={"/"}
-                    target="_blank">
-                    <button className="text-foreground bg-background hover:text-muted-foreground cursor-pointer rounded-full p-2">
-                      <Github className="size-8" />
-                    </button>
-                  </Link>
-                </div> */}
               </Card>
             );
           })}

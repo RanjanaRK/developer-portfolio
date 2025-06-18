@@ -17,7 +17,7 @@ const RippleBg: FC<FrostRippleProps> = ({
     const size = mainCircleSize + i * 50;
     const opacity = Math.max(mainCircleOpacity - i * 0.07, 0);
     const animationDelay = `${i * 0.15}s`;
-    const borderStyle = i % 2 === 0 ? "solid" : "dashed";
+    // const borderStyle = i % 2 === 0 ? "solid" : "dashed";
 
     const style: CSSProperties = {
       borderRadius: "50%",

@@ -1,18 +1,18 @@
 "use client";
 
+import { Code, Contact, Layers, UserRound } from "lucide-react";
+import { useTheme } from "next-themes";
+import Image from "next/image";
+import { useRouter } from "next/navigation";
 import toast, { Toaster } from "react-hot-toast";
 import { Link } from "react-scroll";
+import ThemeToggle from "../ThemeToggle";
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
 } from "../ui/tooltip";
-import Image from "next/image";
-import { useTheme } from "next-themes";
-import { useRouter } from "next/navigation";
-import { UserRound, Layers, Code, Contact, File } from "lucide-react";
-import ThemeToggle from "../ThemeToggle";
 import ResumeButton from "./ResumeButton";
 
 const Navbar = () => {

@@ -94,5 +94,5 @@ type ProjectType = {
   description: string;
   repository_link: string;
   tech: string[];
-  projectImage?: any;
+  projectImage: string;
 };

@@ -74,8 +74,8 @@ const Contact = () => {
 
           <div className="text-sm sm:text-base">
             My inbox is always open. Whether you have a question or just want to
-            say hello, I'll try my best to get back to you! Feel free to mail me
-            about any relevant job updates.
+            say hello, I&apos;ll try my best to get back to you! Feel free to
+            mail me about any relevant job updates.
           </div>
           <div className="flex items-center justify-center gap-3">
             {linkName.map((i) => (

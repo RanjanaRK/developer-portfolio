@@ -12,10 +12,6 @@ const Hero = () => {
     visible: { opacity: 1 },
   };
 
-  const slideInLeft = {
-    hidden: { opacity: 0, x: -100 },
-    visible: { opacity: 1, x: 0 },
-  };
   return (
     <>
       <div className="bg-background relative flex min-h-screen w-full items-center justify-center overflow-hidden rounded-lg p-6 sm:p-20 md:shadow-xl">
@@ -41,9 +37,6 @@ const Hero = () => {
           >
             Full Stack Developer
           </motion.h2>
-          {/* <h2 className="text-xl tracking-widest">
-            Building Scalable Web Solutions for Today’s Digital World
-          </h2> */}
 
           <motion.p
             animate="visible"
@@ -68,10 +61,10 @@ const Hero = () => {
                 Explore My Work
               </Button>
             </Link>
-            <Link href="https://github.com/bekacru/better-fetch"></Link>
+
             <Link
               href="/resume.pdf"
-              download="ranjanaK.pdf"
+              // download="ranjana.pdf"
               className="flex items-center gap-1"
             >
               <Button className="gap flex" variant="secondary" size={"sm"}>
