@@ -76,7 +76,6 @@ const Contact = () => {
             say hello, I&apos;ll try my best to get back to you! Feel free to
             mail me about any relevant job updates.
           </div>
-          0o98uiyuyute
           <div className="flex items-center justify-center gap-3">
             {linkName.map((i) => (
               <div
