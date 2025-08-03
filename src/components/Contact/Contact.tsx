@@ -71,12 +71,12 @@ const Contact = () => {
         <div className="flex flex-col items-center justify-center gap-4">
           {/* <div className="">Let's Keep in Touch</div> */}
           <div className="font-[Iceland] text-3xl">Lets keep in touch</div>
-
           <div className="text-sm sm:text-base">
             My inbox is always open. Whether you have a question or just want to
             say hello, I&apos;ll try my best to get back to you! Feel free to
             mail me about any relevant job updates.
           </div>
+          0o98uiyuyute
           <div className="flex items-center justify-center gap-3">
             {linkName.map((i) => (
               <div
