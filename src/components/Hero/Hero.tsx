@@ -57,8 +57,11 @@ const Hero = () => {
             className="flex w-full items-center justify-center gap-4 py-4"
           >
             <Link href="/profile">
-              <Button className="gap flex cursor-pointer" size={"sm"}>
-                Explore My Work
+              <Button
+                className="gap flex cursor-pointer"
+                size={"sm"}
+              >
+                Explore more
               </Button>
             </Link>
 
@@ -67,7 +70,11 @@ const Hero = () => {
               // download="ranjana.pdf"
               className="flex items-center gap-1"
             >
-              <Button className="gap flex" variant="secondary" size={"sm"}>
+              <Button
+                className="gap flex"
+                variant="secondary"
+                size={"sm"}
+              >
                 Resume <Download />
               </Button>
             </Link>

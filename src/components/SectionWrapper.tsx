@@ -2,9 +2,9 @@
 import { motion } from "motion/react";
 import { Element } from "react-scroll";
 import AboutSection from "./AboutSection/AboutSection";
-import Skills from "./SkillSection/Skills";
-import ProjectsSection from "./ProjectsSection/ProjectsSection";
 import Contact from "./Contact/Contact";
+import ProjectsSection from "./ProjectsSection/ProjectsSection";
+import Skills from "./SkillSection/Skills";
 
 const SectionWrapper = () => {
   const fadeUpVariant = {
@@ -19,25 +19,41 @@ const SectionWrapper = () => {
   return (
     <>
       <div>
-        <motion.div initial="hidden" animate="visible" variants={fadeUpVariant}>
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={fadeUpVariant}
+        >
           <Element name="about">
             <AboutSection />
           </Element>
         </motion.div>
 
-        <motion.div initial="hidden" animate="visible" variants={fadeUpVariant}>
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={fadeUpVariant}
+        >
           <Element name="skills">
             <Skills />
           </Element>
         </motion.div>
 
-        <motion.div initial="hidden" animate="visible" variants={fadeUpVariant}>
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={fadeUpVariant}
+        >
           <Element name="projects">
             <ProjectsSection />
           </Element>
         </motion.div>
 
-        <motion.div initial="hidden" animate="visible" variants={fadeUpVariant}>
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={fadeUpVariant}
+        >
           <Element name="contact">
             <Contact />
           </Element>

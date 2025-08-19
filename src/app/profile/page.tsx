@@ -7,7 +7,7 @@ const page = () => {
     <>
       <Navbar />
 
-      <div className="mx-auto max-w-screen-md px-4 ">
+      <div className="mx-auto max-w-screen-md px-4">
         <SectionWrapper />
       </div>
       <Footer />

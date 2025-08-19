@@ -14,6 +14,7 @@ import {
   TooltipTrigger,
 } from "../ui/tooltip";
 import ResumeButton from "./ResumeButton";
+import ProgressiveBlur from "../magicui/progressive-blur";
 
 const Navbar = () => {
   const { theme } = useTheme();
@@ -57,7 +58,6 @@ const Navbar = () => {
     <>
       <header className="flex justify-center shadow">
         <div className="fixed bottom-4 z-50 mx-auto flex shrink items-center justify-between rounded-xl border bg-transparent p-0.5 shadow-xl backdrop-blur-xl sm:gap-4">
-          {/* <div className="flex h-10 items-center gap-4 p-1"> */}
           <TooltipProvider>
             <Tooltip>
               <TooltipTrigger asChild>
@@ -90,19 +90,6 @@ const Navbar = () => {
               <Tooltip>
                 <TooltipTrigger asChild>
                   <span>
-                    {/* <Link
-                      to={items.name}
-                      smooth={true}
-                      duration={500}
-                      offset={-70}>
-                      <h1 className="group relative flex items-center justify-center rounded-full p-3 transition-all duration-300">
-                        <span className="absolute inset-0 scale-0 transform rounded-full bg-gradient-to-tr from-white via-[#f7fbff] to-[#5191c2] opacity-0 transition-all duration-300 group-hover:scale-100 group-hover:opacity-20 dark:bg-gradient-to-tr dark:from-[#09203f] dark:via-[#537895] dark:to-[#a1c4fd]"></span>
-                        <span className="relative z-10 h-6 w-6 transition-transform duration-300 group-hover:scale-125">
-                          {items.icon}
-                        </span>
-                      </h1>
-                    </Link> */}
-
                     <Link
                       to={items.name}
                       smooth={true}
@@ -162,23 +149,18 @@ const Navbar = () => {
               </TooltipContent>
             </Tooltip>
           </TooltipProvider>
-          {/* </div> */}
         </div>
 
-        <div className="fixed inset-x-0 bottom-0 isolate z-[10] h-[70px]">
-          <div className="gradient-mask-t-0 absolute inset-0 backdrop-blur-[1px]"></div>
-          <div className="gradient-mask-t-0 absolute inset-0 backdrop-blur-[2px]"></div>
-          <div className="gradient-mask-t-0 absolute inset-0 backdrop-blur-[3px]"></div>
-          <div className="gradient-mask-t-0 absolute inset-0 backdrop-blur-[6px]"></div>
-          <div className="gradient-mask-t-0 absolute inset-0 backdrop-blur-[12px]"></div>
-        </div>
-        <div className="pointer-events-none fixed inset-x-0 top-0 isolate z-[10] h-[35px]">
-          <div className="gradient-mask-b-0 absolute inset-0 backdrop-blur-[1px]"></div>
-          <div className="gradient-mask-b-0 absolute inset-0 backdrop-blur-[2px]"></div>
-          <div className="gradient-mask-b-0 absolute inset-0 backdrop-blur-[3px]"></div>
-          <div className="gradient-mask-b-0 absolute inset-0 backdrop-blur-[6px]"></div>
-          <div className="gradient-mask-b-0 absolute inset-0 backdrop-blur-[12px]"></div>
-        </div>
+        <ProgressiveBlur
+          position="top"
+          className="fixed"
+          height="10%"
+        />
+        <ProgressiveBlur
+          position="bottom"
+          className="fixed"
+          height="18%"
+        />
       </header>
 
       <Toaster position="top-center" />

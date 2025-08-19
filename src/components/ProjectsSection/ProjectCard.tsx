@@ -10,15 +10,15 @@ import { ScrollArea } from "../ui/scroll-area";
 const ProjectCard = () => {
   return (
     <>
-      <div className="relative h-screen md:h-[680px]">
+      <div className="relative h-screen md:h-[700px]">
         <ScrollArea className="h-full w-full overflow-hidden rounded-2xl border bg-gray-200/20 dark:bg-gray-900/20">
           {projectsData.map((project) => {
             return (
               <Card
                 key={project.id}
-                className="bg-background mb-16 px-8 pb-0 shadow sm:sticky sm:px-10 sm:pt-12"
+                className="bg-background mb-16 px-8 pb-0 shadow sm:sticky md:px-10 md:pt-12"
                 style={{
-                  top: `calc( ${project.id * 20}px)`,
+                  top: `calc( ${project.id * 10}px)`,
                 }}
               >
                 <div className="absolute inset-0 -z-10 rounded-xl bg-[url('/grain.jpg')] opacity-5"></div>
