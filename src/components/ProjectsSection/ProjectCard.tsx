@@ -68,7 +68,7 @@ const ProjectCard = () => {
           })}
           <div className="grid w-full place-items-center">
             <Link
-              href={"/"}
+              href={"https://github.com/RanjanaRK"}
               className="hover:text-muted-foreground py-2 lowercase hover:underline"
             >
               See more

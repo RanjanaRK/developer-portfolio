@@ -26,17 +26,11 @@ const SkillGrid = () => {
               onClick={() => setFilter(f)}
               layout
               initial={false}
-              animate={{
-                color:
-                  filter === f
-                    ? theme === "dark"
-                      ? "#fff"
-                      : "#000"
-                    : theme === "dark"
-                      ? "#99a1af"
-                      : "#4a5565",
-              }}
-              className="relative px-4 py-2 text-sm font-medium text-gray-600 dark:text-gray-400"
+              className={`relative px-4 py-2 text-sm font-medium ${
+                filter === f
+                  ? "text-black dark:text-white"
+                  : "text-gray-600 dark:text-gray-400"
+              }`}
             >
               {f.charAt(0).toUpperCase() + f.slice(1)}
               {filter === f && (

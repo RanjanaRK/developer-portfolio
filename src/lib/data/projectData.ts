@@ -29,7 +29,7 @@ export const projectsData: ProjectType[] = [
       "typescript",
       "Shadcn",
     ],
-    projectImage: "/projects/portfolio.png",
+    projectImage: "/projects/blog.png",
   },
   {
     id: 3,
