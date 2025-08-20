@@ -1,7 +1,7 @@
 export const projectsData: ProjectType[] = [
   {
     id: 1,
-    name: "ConnectSpehre -FullStack Social media",
+    name: "ConnectSpehre - FullStack Social media",
     description:
       "ConnectSphere is a full-stack social media app built with a monolithic Next.js architecture, powered by Prisma, PostgreSQL, and BetterAuth. It supports user registration, email verification, post sharing, friend following, likes, and comments—all wrapped in a responsive, familiar UI.",
     repository_link: "https://github.com/RanjanaRK/full-stack-social-media.git",
@@ -17,7 +17,7 @@ export const projectsData: ProjectType[] = [
   },
   {
     id: 2,
-    name: "Blog App",
+    name: "TechyBlog – Full Stack Blogging Platform",
     description:
       "TechyBlog is a full-stack blogging platform powered by Next.js, Fastify, and Bun. It features secure authentication with JWT and bcrypt, role-based access control for admins and users, and a clean architecture with modular folders and environment setup.",
     repository_link: "https://github.com/RanjanaRK/blog-app.git",
