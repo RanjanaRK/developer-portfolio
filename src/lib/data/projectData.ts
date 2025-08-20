@@ -63,14 +63,7 @@ export const projectsData: ProjectType[] = [
     description:
       "A modern weather web app offering real-time updates based on live location, including current conditions, hourly forecasts, and a 3-day outlook. Users can seamlessly search for any city for precise weather insights, ensuring a smooth and responsive experience.",
     repository_link: "https://github.com/RanjanaRK/weather-web-app.git",
-    tech: [
-      "nextjs",
-      "axios",
-      "tailwindCSS",
-      "directus",
-      "typescript",
-      "tanstack",
-    ],
+    tech: ["Nextjs", "axios", "tailwindCSS", "ky", "typescript"],
     projectImage: "/projects/climaSync.png",
   },
   {
@@ -79,15 +72,7 @@ export const projectsData: ProjectType[] = [
     description:
       "This portfolio is a reflection of my journey, featuring projects that highlight my creativity and technical expertise.",
     repository_link: "",
-    tech: [
-      "nextjs",
-      "tailwindCSS",
-      "fastify",
-      "prisma",
-      "typescript",
-      "tanstack",
-      "nextui",
-    ],
+    tech: ["nextjs", "tailwindCSS", "Shadcn ui", "framer motion", "typescript"],
     projectImage: "/projects/portfolio.png",
   },
 ];

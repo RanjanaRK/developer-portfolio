@@ -1,7 +1,6 @@
 "use client";
 
 import { AnimatePresence, motion } from "motion/react";
-import { useTheme } from "next-themes";
 import { useState } from "react";
 import { skills } from "./SkillsData";
 
@@ -9,7 +8,6 @@ const filters = ["all", "frontend", "backend"] as const;
 
 const SkillGrid = () => {
   const [filter, setFilter] = useState<(typeof filters)[number]>("all");
-  const { theme } = useTheme();
 
   const getFiltered = () => {
     if (filter === "all") return [...skills.frontend, ...skills.backend];

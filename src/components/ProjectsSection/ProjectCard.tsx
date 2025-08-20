@@ -35,7 +35,7 @@ const ProjectCard = () => {
                     <ul className="mt-4 flex flex-row flex-wrap gap-4 text-white/50">
                       {project.tech.map((tech, index) => (
                         <li
-                          className="rounded-lg bg-black/10 p-2 text-sm text-gray-600 sm:text-base dark:bg-white/10 dark:text-gray-400"
+                          className="rounded-lg bg-black/10 p-2 text-sm text-gray-600 capitalize sm:text-base dark:bg-white/10 dark:text-gray-400"
                           key={index}
                         >
                           {tech}
@@ -44,7 +44,7 @@ const ProjectCard = () => {
                     </ul>
                     <div className="my-8 flex flex-row items-center justify-start gap-4">
                       <Link
-                        href="/"
+                        href={project.repository_link}
                         target="_blank"
                         className="dark:bg-foreground dark:hover:bg-foreground/80 text-background inline-flex h-12 w-2/3 cursor-pointer items-center justify-center gap-2 rounded-xl bg-gray-600/80 font-semibold transition-all duration-300 hover:bg-gray-600/45 md:w-2/5"
                       >
