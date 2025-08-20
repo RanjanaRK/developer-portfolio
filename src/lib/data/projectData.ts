@@ -19,7 +19,7 @@ export const projectsData: ProjectType[] = [
     id: 2,
     name: "Blog App",
     description:
-      "TeckyBlog is a full-stack blogging platform powered by Next.js, Fastify, and Bun. It features secure authentication with JWT and bcrypt, role-based access control for admins and users, and a clean architecture with modular folders and environment setup.",
+      "TechyBlog is a full-stack blogging platform powered by Next.js, Fastify, and Bun. It features secure authentication with JWT and bcrypt, role-based access control for admins and users, and a clean architecture with modular folders and environment setup.",
     repository_link: "https://github.com/RanjanaRK/blog-app.git",
     tech: [
       "nextjs",
