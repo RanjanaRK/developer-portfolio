@@ -67,7 +67,6 @@ const Hero = () => {
 
             <Link
               href="/resume.pdf"
-              // download="ranjana.pdf"
               className="flex items-center gap-1"
             >
               <Button

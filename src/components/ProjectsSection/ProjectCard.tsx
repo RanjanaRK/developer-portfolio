@@ -10,7 +10,7 @@ import { ScrollArea } from "../ui/scroll-area";
 const ProjectCard = () => {
   return (
     <>
-      <div className="relative h-screen md:h-[700px]">
+      <div className="relative h-screen md:h-[720px]">
         <ScrollArea className="h-full w-full overflow-hidden rounded-2xl border bg-gray-200/20 dark:bg-gray-900/20">
           {projectsData.map((project) => {
             return (
@@ -57,9 +57,10 @@ const ProjectCard = () => {
                     <Image
                       src={project.projectImage}
                       alt={project.name}
-                      height={250}
-                      width={250}
-                      className="w-full overflow-hidden rounded-t-lg sm:-mb-0 sm:rounded-tl-lg"
+                      width={800}
+                      height={500}
+                      loading="lazy"
+                      className="w-full overflow-hidden rounded-t-lg object-cover sm:-mb-0 sm:rounded-tl-lg"
                     />
                   </div>
                 </div>

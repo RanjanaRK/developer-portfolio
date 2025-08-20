@@ -55,7 +55,7 @@ export const projectsData: ProjectType[] = [
       "Stripe",
       "jose",
     ],
-    projectImage: "/projects/portfolio.png",
+    projectImage: "/projects/shopCart.png",
   },
   {
     id: 5,
