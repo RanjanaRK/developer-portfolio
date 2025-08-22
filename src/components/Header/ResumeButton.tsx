@@ -4,7 +4,10 @@ import Link from "next/link";
 const ResumeButton = () => {
   return (
     <>
-      <Link href="/resume.pdf" className="flex items-center gap-1">
+      <Link
+        href="/resume.pdf"
+        className="flex items-center gap-1"
+      >
         <FileUser size={24} />
       </Link>
     </>

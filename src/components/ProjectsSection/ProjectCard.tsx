@@ -11,14 +11,18 @@ const ProjectCard = () => {
   return (
     <>
       <div className="relative h-screen md:h-[720px]">
-        <ScrollArea className="h-full w-full overflow-hidden rounded-2xl border bg-gray-200/20 dark:bg-gray-900/20">
+        <div className="absolute top-2 left-1/2 z-10 hidden -translate-x-1/2 animate-pulse text-sm text-blue-500 sm:block dark:text-blue-400">
+          Scroll to explore projects &darr;
+        </div>
+
+        <ScrollArea className="h-full w-full overflow-hidden rounded-2xl border bg-gray-200/20 sm:pt-10 dark:bg-gray-900/20">
           {projectsData.map((project) => {
             return (
               <Card
                 key={project.id}
                 className="bg-background mb-16 px-8 pb-0 shadow sm:sticky md:px-10 md:pt-12"
                 style={{
-                  top: `calc( ${project.id * 10}px)`,
+                  top: `calc( ${project.id * 12}px)`,
                 }}
               >
                 <div className="absolute inset-0 -z-10 rounded-xl bg-[url('/grain.jpg')] opacity-5"></div>
@@ -35,7 +39,7 @@ const ProjectCard = () => {
                     <ul className="mt-4 flex flex-row flex-wrap gap-4 text-white/50">
                       {project.tech.map((tech, index) => (
                         <li
-                          className="rounded-lg bg-black/10 p-2 text-sm text-gray-600 capitalize sm:text-base dark:bg-white/10 dark:text-gray-400"
+                          className="rounded-lg bg-black/10 px-2 py-1.5 text-sm text-gray-600 capitalize sm:text-base dark:bg-white/10 dark:text-gray-400"
                           key={index}
                         >
                           {tech}

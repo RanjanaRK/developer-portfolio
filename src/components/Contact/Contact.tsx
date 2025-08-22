@@ -67,9 +67,8 @@ const Contact = () => {
   ];
   return (
     <>
-      <div className="mask-image:linear-gradient(to_top,white_90%,transparent_100%) mt-10 transform items-center overflow-hidden rounded-lg px-4 transition-transform duration-500 sm:mt-20 sm:px-8">
+      <div className="mt-10 transform items-center overflow-hidden rounded-lg px-4 transition-transform duration-500 sm:mt-20 sm:px-8">
         <div className="flex flex-col items-center justify-center gap-4">
-          {/* <div className="">Let's Keep in Touch</div> */}
           <div className="font-[Iceland] text-3xl">Lets keep in touch</div>
           <div className="text-sm sm:text-base">
             My inbox is always open. Whether you have a question or just want to

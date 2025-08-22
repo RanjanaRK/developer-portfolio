@@ -58,7 +58,7 @@ const Hero = () => {
           >
             <Link href="/profile">
               <Button
-                className="gap flex cursor-pointer"
+                className="cursor-pointer"
                 size={"sm"}
               >
                 Explore more
@@ -70,7 +70,7 @@ const Hero = () => {
               className="flex items-center gap-1"
             >
               <Button
-                className="gap flex"
+                className="cursor-pointer"
                 variant="secondary"
                 size={"sm"}
               >

@@ -23,7 +23,6 @@ const Navbar = () => {
   const themeNotify = () => {
     if (theme === "dark") {
       toast("light", {
-        // icon: "👏",
         duration: 800,
         style: {
           borderRadius: "10px",
@@ -35,7 +34,6 @@ const Navbar = () => {
     if (theme === "light") {
       toast("dark", {
         duration: 800,
-        // icon: "👏",
 
         style: {
           background: "#000",
@@ -63,7 +61,7 @@ const Navbar = () => {
               <TooltipTrigger asChild>
                 <span>
                   <div onClick={() => push("/")}>
-                    <h1 className="group relative flex items-center justify-center rounded-full p-3 transition-all duration-300">
+                    <h1 className="group relative flex cursor-pointer items-center justify-center rounded-full p-3 transition-all duration-300">
                       <span className="absolute inset-0 scale-0 transform rounded-full bg-gradient-to-tr from-white via-[#f7fbff] to-[#5191c2] opacity-0 transition-all duration-300 group-hover:opacity-20 hover:scale-125 dark:hover:bg-gradient-to-tr dark:hover:from-[#0c2b44] dark:hover:via-[#1f3b70] dark:hover:to-[#32659d]"></span>
                       <div className="h-full w-full">
                         <Image
@@ -96,7 +94,7 @@ const Navbar = () => {
                       duration={500}
                       offset={-70}
                     >
-                      <h1 className="group relative flex items-center justify-center rounded-full p-3 transition-all duration-300">
+                      <h1 className="group relative flex cursor-pointer items-center justify-center rounded-full p-3 transition-all duration-300">
                         <span className="absolute inset-0 scale-0 transform rounded-full bg-gradient-to-tr from-white via-[#f7fbff] to-[#5191c2] opacity-0 transition-all duration-300 group-hover:scale-100 group-hover:opacity-20 dark:bg-gradient-to-tr dark:from-[#09203f] dark:via-[#537895] dark:to-[#a1c4fd]"></span>
                         <span className="relative z-10 transition-transform duration-300 group-hover:scale-125">
                           <span className="h-4 w-4 sm:h-5 sm:w-5">
