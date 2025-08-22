@@ -71,7 +71,7 @@ export const projectsData: ProjectType[] = [
     name: "Portfolio",
     description:
       "This portfolio is a reflection of my journey, featuring projects that highlight my creativity and technical expertise.",
-    repository_link: "",
+    repository_link: "https://github.com/RanjanaRK/developer-portfolio.git",
     tech: ["nextjs", "tailwindCSS", "Shadcn ui", "framer motion", "typescript"],
     projectImage: "/projects/portfolio.png",
   },
